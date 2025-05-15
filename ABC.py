@@ -1,8 +1,8 @@
 import numpy as np
 from evaluation import MetricsDAG
 from rl import RL
-X = np.loadtxt("C:/Users/Administrator/Desktop/traindataset.txt")
-true_dag = np.loadtxt('C:/dbzstand.txt')
+X = np.loadtxt("./datasets/traindataset.txt")
+true_dag = np.loadtxt('./datasets/dbzstand.txt')
 
 # 定义参数搜索空间
 parameter_space = {
