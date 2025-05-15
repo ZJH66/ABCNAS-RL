@@ -475,32 +475,9 @@ if __name__ == '__main__':
     a = [[]]
     true_dag = np.loadtxt('F:/dataset/dbzdataed/dbzstand.txt')
     for i in range(1):
-        # X = np.loadtxt("F:/dataset/dbzdataed/dbzdata/dbz"+str(i+1)+".txt")
-        X = np.loadtxt("C:/Users/Administrator/Desktop/11672-11.txt")
-
-    # X = np.loadtxt("F:/dataset/dbzdataed/11672.txt")
-    # true_dag = [[0, 1, 0, 0, 1],
-    #             [0, 0, 1, 0, 0],
-    #             [0, 0, 0, 1, 0],
-    #             [0, 0, 0, 0, 1],
-    #             [0, 0, 0, 0, 0]]
-    # true_dag = np.array(true_dag)
-
-    # path = "C:/Users/shertheus/Downloads/sims/"
-    # filenames = os.listdir(path)
-    # all = np.zeros((5, 5), dtype=float)
-    # for i in range(len(filenames)):
-    #     print(filenames[i])
-    #     m = loadmat(path + filenames[i])
-    #     X = m["ts"]
-    #     x_train = X
+        X = np.loadtxt(".datasets/FACSdataset.txt")
         n = RL(nb_epoch=2500)
         n.learn(X)
-        # if i == 0:
-        #     a = n.causal_matrix
-        # else:
-        #     a = a + n.causal_matrix
-        # print("这是第"+str(i+1)+"个蛋白质数据集")
         print(n.causal_matrix)
         met = MetricsDAG(n.causal_matrix, true_dag)
         print(met.metrics)
