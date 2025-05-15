@@ -475,7 +475,7 @@ if __name__ == '__main__':
     a = [[]]
     true_dag = np.loadtxt('F:/dataset/dbzdataed/dbzstand.txt')
     for i in range(1):
-        X = np.loadtxt(".datasets/FACSdataset.txt")
+        X = np.loadtxt(".datasets/testdataset.txt")
         n = RL(nb_epoch=2500)
         n.learn(X)
         print(n.causal_matrix)
