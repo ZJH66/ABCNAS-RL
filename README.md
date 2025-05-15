@@ -1,4 +1,5 @@
-# This is the official implementation for Inferring Causal Protein Signaling Networks with Reinforcement Learning via Artificial Bee Colony Neural Architecture Search (ABCNAS-RL)
+# ABCNAS-RL
+This is the official implementation for Inferring Causal Protein Signaling Networks with Reinforcement Learning via Artificial Bee Colony Neural Architecture Search
 
 Data_format is .txt
 
